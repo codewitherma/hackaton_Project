@@ -1,0 +1,139 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f2f2f2, #e0e0e0);
+    color: #333;
+}
+
+/* Container for Centered Content */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4CAF50; /* Bright green for a fresh look */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Form Styling */
+form {
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f9f9f9, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff5722; /* Vibrant orange for section headings */
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff5722;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    margin-top: 6px;
+    padding: 12px;
+    width: calc(100% - 24px); /* Adjust for padding */
+    border: 2px solid #2196F3; /* Blue border for inputs */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff5722; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5); /* Orange shadow on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Green gradient for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #81C784, #4CAF50); /* Reverse gradient on hover */
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Resume Display Styling */
+#resume-display {
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 2px solid #4CAF50; /* Green border for resume display */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+#resume-display h2 {
+    color: #4CAF50; /* Green for section heading */
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Education and Experience Items */
+.education-item, .experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #2196F3; /* Blue border for items */
+    border-radius: 8px;
+    background: #e8f0fe; /* Light blue background for items */
+}
+
+.education-item label, .experience-item label {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, textarea {
+        width: calc(100% - 16px); /* Adjust for smaller screens */
+    }
+}
